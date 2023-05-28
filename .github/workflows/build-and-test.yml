@@ -10,26 +10,5 @@ on:
 jobs:
   build-and-test:
     name: build-and-test
+    uses: ./.github/workflows/build-test-publish.yml
 
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: 📦 setup .NET
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: 7.0.x
-
-      - name: ⚙️ restore workloads
-        run: dotnet workload restore src/MatomoProvider.sln
-
-      - name: 📦 restore packages
-        run: dotnet restore src/MatomoProvider.sln
-
-      - name: 👷 build project
-        run: dotnet build --configuration Release --no-restore src/MatomoProvider.sln
-    
-      - name: ✅ test project
-        run: dotnet test --no-restore --verbosity normal src/MatomoProvider.sln
-   
