@@ -1,5 +1,10 @@
 # MatomoProvider
 
+<p style="text-align: center;">
+    <a href="https://www.nuget.org/packages/MatomoProvider/"><img alt="Nuget" src="https://img.shields.io/nuget/v/MatomoProvider?style=for-the-badge" /></a>
+    <img alt="GitHub Workflow Status (with branch)" src="https://img.shields.io/github/actions/workflow/status/igotinfected/MatomoProvider/build-and-test.yml?branch=main&label=build%20%26%20test&style=for-the-badge" />
+</p>
+
 `MatomoProvider` is a Blazor component that registers and enables the [Matomo Analytics](https://matomo.org/) tracking code for you.
 
 This component is based on [cmoissl's `Blazor.Matomo`](https://github.com/cmoissl/Blazor.Matomo) component but adapted to provide extra functionality, with a focus on Blazor WASM's SPA nature.
@@ -8,7 +13,7 @@ Some of the recommendations from [Matomo's SPA tracking documentation](https://d
 
 ## Usage
 
-TODO: add nuget
+Install the [MatomoProvider](https://www.nuget.org/packages/MatomoProvider/) package.
 
 ### Registering the component
 
