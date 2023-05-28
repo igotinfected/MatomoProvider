@@ -38,6 +38,7 @@ jobs:
 
       - name: 🔃 upload artifacts
         if: inputs.should-package
+        uses: actions/upload-artifact@v3
         with:
           name: artifacts
           if-no-files-found: error
