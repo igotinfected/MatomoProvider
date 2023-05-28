@@ -10,3 +10,15 @@
         </LayoutView>
     </NotFound>
 </Router>
+
+@* Register matomo provider application-wide *@
+<MatomoProvider ApiUrl="@_matomoOptions.ApiUrl"
+                SiteId="@_matomoOptions.SiteId"
+                UserIdFunc="async () => await Task.FromResult(Guid.NewGuid().ToString())" />
+
+@code {
+
+    [Inject]
+    private MatomoOptions _matomoOptions { get; set; } = default!;
+
+}
