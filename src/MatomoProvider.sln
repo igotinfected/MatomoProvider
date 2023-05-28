@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatomoProvider", "MatomoProvider\MatomoProvider.csproj", "{71F0BCAD-2728-41B5-B95D-296BD997D610}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatomoProvider.Tests", "MatomoProvider.Tests\MatomoProvider.Tests.csproj", "{22388CB1-1F96-4424-8281-CA5579342C29}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MatomoProvider.Samples", "MatomoProvider.Samples", "{50D52E59-7E49-40D2-83AB-9852D47DAA4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatomoProvider.Server", "MatomoProvider.Samples\MatomoProvider.Server\MatomoProvider.Server.csproj", "{9E3E7D53-86FD-4F45-ABAB-026EB3A67C71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatomoProvider.Wasm", "MatomoProvider.Samples\MatomoProvider.Wasm\MatomoProvider.Wasm.csproj", "{2F0CA104-24F1-4E3F-BC42-6F515AE73C35}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71F0BCAD-2728-41B5-B95D-296BD997D610}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71F0BCAD-2728-41B5-B95D-296BD997D610}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71F0BCAD-2728-41B5-B95D-296BD997D610}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71F0BCAD-2728-41B5-B95D-296BD997D610}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22388CB1-1F96-4424-8281-CA5579342C29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22388CB1-1F96-4424-8281-CA5579342C29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22388CB1-1F96-4424-8281-CA5579342C29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22388CB1-1F96-4424-8281-CA5579342C29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E3E7D53-86FD-4F45-ABAB-026EB3A67C71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E3E7D53-86FD-4F45-ABAB-026EB3A67C71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E3E7D53-86FD-4F45-ABAB-026EB3A67C71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E3E7D53-86FD-4F45-ABAB-026EB3A67C71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F0CA104-24F1-4E3F-BC42-6F515AE73C35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F0CA104-24F1-4E3F-BC42-6F515AE73C35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F0CA104-24F1-4E3F-BC42-6F515AE73C35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F0CA104-24F1-4E3F-BC42-6F515AE73C35}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9E3E7D53-86FD-4F45-ABAB-026EB3A67C71} = {50D52E59-7E49-40D2-83AB-9852D47DAA4B}
+		{2F0CA104-24F1-4E3F-BC42-6F515AE73C35} = {50D52E59-7E49-40D2-83AB-9852D47DAA4B}
+	EndGlobalSection
+EndGlobal
