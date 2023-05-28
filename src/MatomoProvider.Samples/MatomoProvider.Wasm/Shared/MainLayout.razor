@@ -1,5 +1,10 @@
 ﻿@inherits LayoutComponentBase
 
+@* Register matomo provider application-wide, for all pages that use MainLayout *@
+<MatomoProvider ApiUrl="@_matomoOptions.ApiUrl"
+                SiteId="@_matomoOptions.SiteId"
+                UserIdFunc="async () => await Task.FromResult(Guid.NewGuid().ToString())" />
+
 <div class="page">
     <div class="sidebar">
         <NavMenu />
@@ -15,3 +20,10 @@
         </article>
     </main>
 </div>
+
+@code {
+
+    [Inject]
+    private MatomoOptions _matomoOptions { get; set; } = default!;
+
+}

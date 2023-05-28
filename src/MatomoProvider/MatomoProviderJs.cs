@@ -6,7 +6,6 @@ public static class MatomoProviderJs
 {
     public static ValueTask Initialize(IJSRuntime jsRuntime, string apiUrl, int siteId)
     {
-
         return jsRuntime.InvokeVoidAsync("MatomoProvider.initialize", apiUrl, siteId);
     }
 
