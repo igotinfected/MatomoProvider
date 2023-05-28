@@ -1,0 +1,22 @@
+version: "3.9"
+services:
+  db:
+    image: mariadb:latest
+    command: --max-allowed-packet=64MB
+    restart: always
+    volumes:
+      - dbvol:/var/lib/mysql:Z
+    env_file:
+      - ./db.env
+  app:
+    image: matomo:latest
+    restart: always
+    volumes:
+      - matomo:/var/www/html:z
+    env_file:
+      - ./db.env
+    ports:
+      - 80:80
+volumes:
+  dbvol:
+  matomo:
