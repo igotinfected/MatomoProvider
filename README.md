@@ -1,7 +1,7 @@
 # MatomoProvider
 
 <p align="center">
-    <a href="https://www.nuget.org/packages/MatomoProvider/"><img alt="Nuget" src="https://img.shields.io/nuget/v/MatomoProvider?style=for-the-badge" /></a>
+    <a href="https://www.nuget.org/packages/MatomoProvider/"><img alt="Nuget (with prereleases)" src="https://img.shields.io/nuget/vpre/MatomoProvider?logo=nuget&style=for-the-badge"></a>
     <img alt="GitHub Workflow Status (with branch)" src="https://img.shields.io/github/actions/workflow/status/igotinfected/MatomoProvider/build-and-test.yml?branch=main&label=build%20%26%20test&style=for-the-badge" />
 </p>
 
