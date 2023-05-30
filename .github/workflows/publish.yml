@@ -1,4 +1,4 @@
-name: Publish nuget package 
+name: Publish nuget package
 
 on:
   release:
@@ -7,7 +7,7 @@ on:
 jobs:
   build-and-test:
     name: build-and-test
-    uses: ./.github/workflows/build-test-publish.yml
+    uses: ./.github/workflows/reusable/build-test-publish.yml
     with:
       should-package: true
   
@@ -28,4 +28,3 @@ jobs:
 
       - name: 🚀 publish nuget packages
         run: dotnet nuget push "*.nupkg" --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
-
