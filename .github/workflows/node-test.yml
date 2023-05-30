@@ -20,7 +20,7 @@ jobs:
         with:
           filters: |
             changed:
-              - 'src/MatomoProvider.Js.Tests/**'
+              - added|deleted|modified: 'src/MatomoProvider.Js.Tests/**'
 
   node-test:
     runs-on: ubuntu-latest
