@@ -29,4 +29,4 @@ jobs:
     name: build-and-test
     needs: changes
     if: ${{ needs.changes.outputs.changed == 'true' }}
-    uses: ./.github/workflows/reusable/build-test-publish.yml
+    uses: ./.github/workflows/build-test-publish.yml
