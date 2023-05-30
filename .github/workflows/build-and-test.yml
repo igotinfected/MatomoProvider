@@ -2,6 +2,8 @@ name: Build & test
 
 on:
   workflow_dispatch:
+  push:
+    branches: [ main ]
   pull_request:
     branches: [ main ]
 
@@ -28,5 +30,6 @@ jobs:
   build-and-test:
     name: build-and-test
     needs: changes
-    if: ${{ needs.changes.outputs.changed == 'true' }}
     uses: ./.github/workflows/build-test-publish.yml
+    with:
+      should-run: ${{ needs.changes.outputs.changed == 'true' }}
