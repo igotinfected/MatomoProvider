@@ -28,6 +28,6 @@ describe('matomo script tests', () => {
             expect(_paq, `should push ${item} to _paq`).to.deep.contain(item);
         })
         expect(document.querySelectorAll(expectedScriptElement), 'should inject the matomo.js script tag')
-            .to.have.lengthOf(2);
+            .to.have.lengthOf(1);
     });
 });

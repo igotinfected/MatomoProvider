@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.JSInterop;
 
 namespace MatomoProvider;
-a
+
 public partial class MatomoProvider : ComponentBase, IDisposable
 {
     [CascadingParameter]
